@@ -1,15 +1,16 @@
 package jvham.memento;
-import java.util.ArrayList;;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Caretaker {
-	private ArrayList<Memento> mementos = new ArrayList<Memento>();
+	private List<Memento> mementoList = new ArrayList<Memento>();
 
-    public void addMemento(Memento m) {
-        mementos.add(m);
+    public void add(Memento m) {
+    	mementoList.add(m);
     }
 
-    public Memento getMemento() {
-        return mementos.get(1);
+    public Memento get(int index) {
+        return mementoList.get(index);
     }
 
 }
